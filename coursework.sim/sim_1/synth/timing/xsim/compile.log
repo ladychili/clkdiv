@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.sim/sim_1/synth/timing/xsim/clkdiv_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clkdiv_tb

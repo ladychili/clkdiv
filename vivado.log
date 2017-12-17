@@ -1,0 +1,148 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Dec 14 07:47:11 2017
+# Process ID: 3304
+# Current directory: Z:/Downloads/MSD_coursework/Stage1_clkdiv
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2644 Z:\Downloads\MSD_coursework\Stage1_clkdiv\coursework.xpr
+# Log file: Z:/Downloads/MSD_coursework/Stage1_clkdiv/vivado.log
+# Journal file: Z:/Downloads/MSD_coursework/Stage1_clkdiv\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/cathy/Documents/coursework' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 793.402 ; gain = 17.773
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 1148.766 ; gain = 326.871
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.sim/sim_1/synth/timing/xsim/clkdiv_tb_time_synth.v"
+write_verilog: Time (s): cpu = 00:00:40 ; elapsed = 00:00:14 . Memory (MB): peak = 1256.125 ; gain = 107.359
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.sim/sim_1/synth/timing/xsim/clkdiv_tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.sim/sim_1/synth/timing/xsim/clkdiv_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.sim/sim_1/synth/timing/xsim/clkdiv_tb_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'clkdiv_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj clkdiv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.sim/sim_1/synth/timing/xsim/clkdiv_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj clkdiv_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clkdiv_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.sim/sim_1/synth/timing/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 0b04b20321a24e4a82e88c190bb65fc7 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot clkdiv_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.clkdiv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "clkdiv_tb_time_synth.sdf", for root module "clkdiv_tb/uut".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "clkdiv_tb_time_synth.sdf", for root module "clkdiv_tb/uut".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.FDRE(INIT=1'b1,IS_C_INVERTED=1'b...
+Compiling module simprims_ver.FDRE(IS_C_INVERTED=1'b1)
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.clkdiv
+Compiling architecture arch of entity xil_defaultlib.clkdiv_tb
+Built simulation snapshot clkdiv_tb_time_synth
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.sim/sim_1/synth/timing/xsim/xsim.dir/clkdiv_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.sim/sim_1/synth/timing/xsim/xsim.dir/clkdiv_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Dec 14 07:49:25 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 14 07:49:25 2017...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1621.066 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clkdiv_tb_time_synth -key {Post-Synthesis:sim_1:Timing:clkdiv_tb} -tclbatch {clkdiv_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source clkdiv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clkdiv_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:01:24 ; elapsed = 00:00:47 . Memory (MB): peak = 1657.281 ; gain = 835.387
+run 1 ms
+Note: No error found
+Time: 1000065 ns  Iteration: 0  Process: /clkdiv_tb/line__31  File: Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd
+Note: No error found
+Time: 1000160 ns  Iteration: 0  Process: /clkdiv_tb/line__31  File: Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd
+Note: No error found
+Time: 1000255 ns  Iteration: 0  Process: /clkdiv_tb/line__31  File: Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd
+Note: No error found
+Time: 1000350 ns  Iteration: 0  Process: /clkdiv_tb/line__31  File: Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd
+Note: No error found
+Time: 1000445 ns  Iteration: 0  Process: /clkdiv_tb/line__31  File: Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd
+Note: No error found
+Time: 1000540 ns  Iteration: 0  Process: /clkdiv_tb/line__31  File: Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd
+Note: No error found
+Time: 1000635 ns  Iteration: 0  Process: /clkdiv_tb/line__31  File: Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd
+Note: No error found
+Time: 1000730 ns  Iteration: 0  Process: /clkdiv_tb/line__31  File: Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd
+Note: No error found
+Time: 1000825 ns  Iteration: 0  Process: /clkdiv_tb/line__31  File: Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd
+Note: No error found
+Time: 1000920 ns  Iteration: 0  Process: /clkdiv_tb/line__31  File: Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1657.281 ; gain = 0.000
+save_wave_config {Z:/Downloads/MSD_coursework/Stage1_clkdiv/clkdiv_tb_timing_simu.wcfg}
+add_files -fileset sim_1 -norecurse Z:/Downloads/MSD_coursework/Stage1_clkdiv/clkdiv_tb_timing_simu.wcfg
+set_property xsim.view Z:/Downloads/MSD_coursework/Stage1_clkdiv/clkdiv_tb_timing_simu.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1657.281 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 14 07:53:19 2017...

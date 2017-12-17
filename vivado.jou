@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Dec 14 07:47:11 2017
+# Process ID: 3304
+# Current directory: Z:/Downloads/MSD_coursework/Stage1_clkdiv
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2644 Z:\Downloads\MSD_coursework\Stage1_clkdiv\coursework.xpr
+# Log file: Z:/Downloads/MSD_coursework/Stage1_clkdiv/vivado.log
+# Journal file: Z:/Downloads/MSD_coursework/Stage1_clkdiv\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/Downloads/MSD_coursework/Stage1_clkdiv/coursework.xpr
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type timing
+source clkdiv_tb.tcl
+run 1 ms
+save_wave_config {Z:/Downloads/MSD_coursework/Stage1_clkdiv/clkdiv_tb_timing_simu.wcfg}
+add_files -fileset sim_1 -norecurse Z:/Downloads/MSD_coursework/Stage1_clkdiv/clkdiv_tb_timing_simu.wcfg
+set_property xsim.view Z:/Downloads/MSD_coursework/Stage1_clkdiv/clkdiv_tb_timing_simu.wcfg [get_filesets sim_1]
+close_sim

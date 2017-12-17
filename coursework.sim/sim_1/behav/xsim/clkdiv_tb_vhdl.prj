@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../coursework.srcs/sources_1/imports/Downloads/clkdiv.vhd" \
+"../../../../coursework.srcs/sim_1/imports/Downloads/clkdiv_tb.vhd" \
+
+# Do not sort compile order
+nosort
